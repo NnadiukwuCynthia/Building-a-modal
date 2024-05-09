@@ -7,16 +7,30 @@
     <title>Document</title>
     <script defer src="app.js"></script>
 </head>
-<body>
-    
-    <div class="modal-overlay">
-        <button class="btn">Click Me!!</button>
-    </div>
-    <div class="modal-container">
-        <div class="modal">
-            <h1>modal-open</h1>
-            <button class="modal-btn">Close Modal</button>
-        </div>
-    </div>
-</body>
+    <body>
+        <main>
+            <div class="wrap">
+              <button class="button jsModalButton">Click me!</button>
+              <svg class="point-hand" viewBox="0 0 58 66">
+                <use xlink:href="images/sprite.svg#point-hand" />
+              </svg>
+            </div>
+          </main>
+      
+          <div class="modal-overlay jsModalOverlay">
+            <div class="modal">
+              <div class="modal__content">
+                <svg class="wave-hand" width="112" height="139" viewBox="0 0 112 139">
+                  <use xlink:href="images/sprite.svg#wave-hand" />
+                </svg>
+                <button class="modal__close-button jsModalClose">
+                  <svg width="1em" height="1em" viewBox="0 0 18 18">
+                    <use xlink:href="images/sprite.svg#close" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+      
+    </body>
 </html>
